@@ -1,0 +1,96 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.mobile-menu-toggle {
+  cursor: pointer;
+  position: fixed;
+  right: 15px;
+  top: 10px;
+  color: #3498db;
+  font-size: 1.5em;
+  z-index: 20;
+  padding: 0 7px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.navigation {
+  display: none;
+}
+
+.lead {
+  background-color: #add8e6;
+  padding: 100px 15px;
+  text-align: center;
+}
+
+.container-header {
+  text-align: center;
+}
+
+.container {
+  padding: 2em 1em;
+  border-bottom: 1px solid #dcd9d9;
+}
+
+.container-experience {
+  padding: 1em 0.5em;
+}
+
+.background-alt {
+  background: #f2f2f5;
+}
+
+.sub-container {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+}
+
+.sub-container + .sub-container {
+  margin-top: 0.5em;
+}
+
+.sub-container h3 {
+  font-size: 1.4em;
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+.sub-container > p {
+  margin: 0.3em 0;
+  text-align: center;
+}
+
+.position {
+  text-align: left;
+}
+.position h4 {
+  margin: 0.8em 0 0;
+  font-size: 1.2em;
+}
+
+.position p {
+  margin-top: 0.5em;
+}
+
+.position + .position {
+  border-top: 1px solid #dcd9d9;
+}
+
+.contact a {
+  text-align: center;
+  display: block;
+  font-size: 1.3em;
+}
+
+footer {
+  color: #7b8892;
+}

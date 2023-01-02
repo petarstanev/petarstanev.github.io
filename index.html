@@ -1,41 +1,244 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Petar Stanev</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <script src="https://use.fontawesome.com/4454d50fe4.js"></script>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+  <body>
+    <!-- Add your site or application content here -->
+    <div class="mobile-menu-toggle">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
 
-<body>
+    <nav class="navigation">
+      <ul>
+        <li>About</li>
+        <li>Experience</li>
+        <li>Education</li>
+        <li>Skills</li>
+        <li>Contact</li>
+        <!-- <li>Future</li>   -->
+      </ul>
+    </nav>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <section class="lead">
+      <div id="lead-content">
+        <h1>Petar Stanev</h1>
+        <h2>Software Developer</h2>
+        <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
+      </div>
+      <!-- End #lead-content -->
+      <div id="lead-down">
+        <span>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </span>
+      </div>
+      <!-- End #lead-down -->
+    </section>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+    <section class="container">
+      <h2 class="container-header">About Me</h2>
+      <p>
+        Software developer with more than 6 years of professional experience.
+        Focused on web development working as backend developer (Go, C#) and
+        Frontend (React, Angular and In-house frameworks). From Sofia, Bulgaria
+        lived 8 years in Manchester, UK. Currently living in Bangkok, Thailand
+        but I am open to relocate.
+      </p>
+    </section>
 
+    <section class="container-experience background-alt">
+      <h2 class="container-header">Experience</h2>
+      <div class="sub-container">
+        <h3>Bet 365</h3>
+        <p>April 2019 - August 2022</p>
+        <p>Manchester, United Kingdom</p>
+
+        <div class="position">
+          <h4>Software Developer</h4>
+          <span>April 2020 - August 2022</span>
+          <p>
+            When I got promoted to a Software developer position I was invited
+            to join Members UI(user interface) team. The team was responsible
+            for all member's pages including Register, Login, Payments, and
+            Verification. The pages were displayed across different products
+            Sports, Casino, Gaming and others. The team was working on
+            converting a monolith ASP.NET project to GO Microservices for the
+            backend and an in-house framework using Typescript for the frontend.
+            The first part of the project was loading current pages in an inline
+            frame. This allowed us to work on the project on a page-by-page
+            basis. One of the interesting parts of this project was that
+            different countries had different content on the member's pages. We
+            added a feature to our in-house framework to have localization
+            logic. This allowed us to deploy only the UI code that is used for a
+            selected country.
+          </p>
+        </div>
+
+        <div class="position">
+          <h4>Junior Developer</h4>
+          <span>April 2019 - April 2020</span>
+          <p>
+            My first position in Bet365 was as a Front end developer in the
+            Sports UI(user interface) team. The focus of my work was developing
+            a mobile-first responsible sports website. The work was done on a
+            component-by-component basis. It involved gathering requirements,
+            analysis of existing components, creating new components, testing,
+            deploying and maintaining. The project used an In-house framework
+            that had concepts from Angular and React. The programming language
+            was Typescript and Sass was used as CSS preprocessor. The project
+            goal was to create a betting website that followed W3C standards
+            with a focus on accessibility.
+          </p>
+        </div>
+      </div>
+      <div class="sub-container">
+        <h3>TopCashback</h3>
+        <p>June 2016 - April 2019</p>
+        <p>Manchester, United Kingdom</p>
+
+        <div class="position">
+          <h4>Software Developer</h4>
+          <span>April 2020 - August 2022</span>
+          <p>
+            After finishing my placement year I was working at the White Label
+            team in TopCashback. The team was responsible for several
+            white-label sites based in the UK and internationally. The websites
+            used ASP.Net MVC using C# and they had different codebase from each
+            other and our main website. An interesting challenge was that for
+            the white-label websites we used RavenDB as a NoSQL database while
+            for the main website we used an SQL database. I was involved in
+            creating a project that involved the synchronization of data between
+            the two databases. Because of the spikes in the traffic we also
+            added RabbitMQ to queue updates between the databases.
+          </p>
+        </div>
+
+        <div class="position">
+          <h4>Placement Developer</h4>
+          <span>June 2016 - May 2017</span>
+          <p>
+            In my placement year, I worked at the Business Critical team which
+            was responsible for developing features, testing, refactoring and
+            deploying for TopCashback UK, US and India sites. The websites had
+            one code base and were using ASP.NET Web Forms with VB.NET, SCSS and
+            jQuery for the frontend. I also worked on a Back Office tool that
+            was used for managing the content on the website. I worked on this
+            tool to allow text and/or images to be displayed on the website as
+            Offers, Promotions and Banners and others.
+          </p>
+        </div>
+      </div>
+
+      <div class="sub-container">
+        <h3>DevriX</h3>
+        <p>Sofia, Bulgaria</p>
+
+        <div class="position">
+          <h4>Student Internship</h4>
+          <span>June - September 2013</span>
+          <p>
+            My student internship at DevriX started with an introduction to
+            Content Management Systems(CMS) and WordPress. The introduction
+            included setting up a WordPress site in a local environment and an
+            explanation of the benefits of using CMS. The second part of the
+            internship was going through a tutorial on building a simple plugin
+            and theme for WordPress. After successfully completing the tutorial
+            projects the students in the internship developed a URL Shortener
+            WordPress plugin similar Bitly and Google URL Shortener. We have
+            successfully developed the plugin that converted long URL to short
+            ones and as an addition, there was a tracking management tool that
+            allowed us to see the number of clicks on certain URLs. The
+            internship allowed me to experience working in a real company and
+            improving my technical skills: PHP, JavaScript, HTML5, CSS and
+            developing my soft skills: Communication, Teamwork, Problem-solving
+            and Time management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="container-header">Education</h2>
+      <div class="sub-container">
+        <h3>The University of Salford</h3>
+        <p>Bachelor's degree, Software Engineering</p>
+
+        <p>2014 - 2018</p>
+        <p>Manchester, United Kingdom</p>
+        <div>
+          <p>
+            Bachelor degree focused on developing in-depth knowledge and
+            understanding of software specification, design, implementation and
+            deployment using software development methodologies. The degree also
+            included a placement year where I have used the knowledge from the
+            university in industry. Graduated successfully with First Class
+            Honours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container background-alt">
+      <h2 class="container-header">Projects</h2>
+      <div class="sub-container">
+        <h3>Project 1</h3>
+        <p>Description of project 1 to be added.</p>
+        <a href="#">View Project</a>
+        <a href="#">Source</a>
+      </div>
+      <div class="sub-container">
+        <h3>Project 2</h3>
+        <p>Description of project 2 to be added.</p>
+        <a href="#">View Project</a>
+        <a href="#">Source</a>
+      </div>
+    </section>
+
+    <section class="container contact">
+      <h2 class="container-header">Get in touch</h2>
+      <a href="https://www.linkedin.com/in/petarstanev">LinkedIn</a>
+    </section>
+
+    <footer class="container background-alt">
+      <p>Copyright © 2023 Petar Stanev</p>
+    </footer>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
