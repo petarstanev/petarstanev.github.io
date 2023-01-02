@@ -24,11 +24,6 @@
   </head>
 
   <body>
-    <!-- Add your site or application content here -->
-    <div class="mobile-menu-toggle">
-      <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-
     <nav class="navigation">
       <ul>
         <li>About</li>
@@ -36,7 +31,6 @@
         <li>Education</li>
         <li>Skills</li>
         <li>Contact</li>
-        <!-- <li>Future</li>   -->
       </ul>
     </nav>
 
@@ -226,19 +220,18 @@
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MW54RE9K0R"
+    ></script>
     <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MW54RE9K0R");
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>
