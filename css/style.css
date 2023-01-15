@@ -15,7 +15,7 @@ a {
   position: fixed;
   right: 15px;
   top: 10px;
-  color: #3498db;
+  color: #209CEE;
   font-size: 1.5em;
   z-index: 20;
   padding: 0 7px;
@@ -28,9 +28,25 @@ a {
 }
 
 .lead {
-  background-color: #add8e6;
+  background-color: #209CEE;
   padding: 100px 15px;
   text-align: center;
+  color: #ffffff;
+}
+
+.resume {
+  color: #ffffff;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 0.5em;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+.resume:hover {
+  background-color: #ffffff;
+  color: #209CEE;
 }
 
 .container-header {
