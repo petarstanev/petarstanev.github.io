@@ -1,0 +1,55 @@
+
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+}
+
+
+/* WORK END */
+
+
+/* CONTACT END */
+
+.footer {
+  background-color: #edf2f7;
+  display: flex;
+  padding: 1em;
+}
+
+.footer p {
+  flex: 1;
+}
+
+.footer section {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer section a {
+  flex: 0 1 2em;
+  padding-left: 1em;
+}
