@@ -4,13 +4,13 @@ import { IconContext } from "react-icons";
 
 const Navigation = () => {
   return (
-    <nav className="flex bg-[#edf2f7] justify-between items-center">
-      <IconContext.Provider value={{ size: "1.8em" }}>
-        <button className="p-[1.2em]">
+    <nav className="flex bg-slate-200 justify-between items-center">
+      <IconContext.Provider value={{ size: "2rem" }}>
+        <button className="p-4">
           <FaBars />
         </button>
-        <b className="text-[1.4em]">Petar Stanev</b>
-        <button className="p-[1.2em]">
+        <b className="text-2xl">Petar Stanev</b>
+        <button className="p-4">
           <FaMoon />
         </button>
       </IconContext.Provider>

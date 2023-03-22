@@ -7,19 +7,21 @@ import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Background from "@/components/Background";
 
 export default function Home() {
   return (
     <>
+      <Background />
       <Header />
       <Navigation />
       <Lead />
       <About />
-      <Work/>      
-      <Education/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+      <Work />
+      <Education />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }

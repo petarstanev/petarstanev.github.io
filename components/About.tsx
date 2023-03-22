@@ -1,14 +1,14 @@
 
 const About = () => {
   return (
-    <section className="flex flex-col px-[1em] py-0 items-center">
-      <h2 className="text-center text-[1.9em]">About Me</h2>
+    <section className="flex flex-col px-4 items-center">
+      <h2 className="text-center text-3xl pb-4">About Me</h2>
       <img
-        className="w-[10em] border rounded-full border-solid border-[#eceff4]"
+        className="w-40 border rounded-full border-solid border-[#eceff4]"
         src="/profile.webp"
         alt="Petar Stanev profile photo"
       />
-      <p>
+      <p className="bg-slate-50 pt-4">
         Hi, I am Petar Stanev Software developer with more than
         <b> 6 years</b> of professional experience. Focused on web development
         working as a full-stack developer using <b>Go</b>, <b>C#</b> for backend

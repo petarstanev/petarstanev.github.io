@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-h1,h2,h3,h4,h5,h6 {
-    font-weight: bold;
+@layer base {
+  h1 {
+    @apply font-bold;
+  }
+  h2 {
+    @apply font-bold;
+  }
+  h3 {
+    @apply font-bold;
+  }
+  h4 {
+    @apply font-bold;
+  }
+  h5 {
+    @apply font-bold;
+  }
 }
