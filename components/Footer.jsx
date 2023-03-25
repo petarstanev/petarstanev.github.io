@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="flex bg-slate-200 p-4 h-16">
       <p className="flex-1">© 2023 Petar Stanev</p>
       <section className="flex flex-1 justify-end items-center">
-        <IconContext.Provider value={{ size: "1em" }}>
+        <IconContext.Provider value={{ size: "1rem" }}>
           <a
             className="flex-[0_1_2em] pl-4"
             href="https://www.linkedin.com/in/petarstanev"

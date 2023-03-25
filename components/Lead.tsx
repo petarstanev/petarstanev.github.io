@@ -8,7 +8,7 @@ import { IconContext } from "react-icons";
 const Lead = () => {
   return (
     <IconContext.Provider value={{ size: "1.8em" }}>
-      <main className="text-center h-[93vh] pt-32 pb-0 px-4 flex flex-col">
+      <main className="text-center min-h-[95vh] pt-32 pb-0 px-4 flex flex-col">
         <h1 className="text-6xl">Petar Stanev</h1>
         <h2 className="text-center text-3xl my-[.8em]">Software Developer</h2>
         <p className="bg-slate-50">
@@ -53,8 +53,10 @@ const Lead = () => {
             <FaExternalLinkAlt />
           </IconContext.Provider>
         </a>
-        <div className="flex justify-center content-center flex-1 items-end pb-4 animate-bounce">
+        <div className="py-4 mt-auto">
+          <div className="flex justify-center content-center flex-1 items-end animate-bounce">
             <FaArrowAltCircleDown />
+          </div>
         </div>
       </main>
     </IconContext.Provider>

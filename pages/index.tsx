@@ -15,12 +15,14 @@ export default function Home() {
       <Background />
       <Header />
       <Navigation />
-      <Lead />
-      <About />
-      <Work />
-      <Education />
-      <Projects />
-      <Contact />
+      <div className="max-w-3xl mx-auto">
+        <Lead />
+        <About />
+        <Work />
+        <Education />
+        <Projects />
+        <Contact />
+      </div>
       <Footer />
     </>
   );
