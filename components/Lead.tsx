@@ -10,7 +10,7 @@ const Lead = () => {
     <IconContext.Provider value={{ size: "1.8em", color: "#000000" }}>
       <main className="text-center min-h-[95vh] pt-32 pb-0 px-4 flex flex-col">
         <h1 className="text-6xl">Petar Stanev</h1>
-        <h2 className="text-center text-3xl my-[.8em]">Software Developer</h2>
+        <h2 className="my-3">Software Developer</h2>
         <p className="bg-slate-50">
           A Software Developer with 6 years of professional experience focused
           on web development currently living in Thailand. Looking for my next

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="flex bg-slate-200 p-4 h-16">
       <p className="flex-1">© 2023 Petar Stanev</p>
-      <section className="flex flex-1 justify-end items-center">
+      <section className="flex flex-1 flex-wrap justify-end items-center">
         <IconContext.Provider value={{ size: "1rem" }}>
           <a
             className="flex-[0_1_2em] pl-4"

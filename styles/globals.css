@@ -7,10 +7,10 @@
     @apply font-bold;
   }
   h2 {
-    @apply font-bold;
+    @apply font-bold text-center text-3xl;
   }
   h3 {
-    @apply font-bold;
+    @apply font-bold text-xl text-center my-2;
   }
   h4 {
     @apply font-bold;
@@ -21,5 +21,13 @@
 
   a {
     @apply text-violet-500 hover:underline;
+  }
+
+  section {
+    @apply flex flex-col px-4;
+  }
+
+  article {
+    @apply border px-4 my-4 rounded-md border-violet-500 bg-slate-50;
   }
 }
