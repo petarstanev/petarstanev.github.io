@@ -6,6 +6,7 @@ import Work from "@/components/Work";
 import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Resume from "@/components/Resume";
 import Footer from "@/components/Footer";
 import Background from "@/components/Background";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Work />
         <Education />
         <Projects />
+        <Resume />
         <Contact />
       </div>
       <Footer />

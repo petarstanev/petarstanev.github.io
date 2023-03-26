@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 
 const Lead = () => {
   return (
-    <IconContext.Provider value={{ size: "1.8em" }}>
+    <IconContext.Provider value={{ size: "1.8em", color: "#000000" }}>
       <main className="text-center min-h-[95vh] pt-32 pb-0 px-4 flex flex-col">
         <h1 className="text-6xl">Petar Stanev</h1>
         <h2 className="text-center text-3xl my-[.8em]">Software Developer</h2>
@@ -42,18 +42,19 @@ const Lead = () => {
             <FaEnvelope />
           </a>
         </div>
-        <div></div>
         <a
           className="self-center inline-flex items-center border text-violet-500 p-3 rounded-full border-violet-500"
-          href="/Resume Petar Stanev.pdf"
+          href="/Resume_Petar_Stanev.pdf"
           target="_blank"
         >
           <b>Resume</b>
-          <IconContext.Provider value={{ size: "1em", className: "ml-[.5em]" }}>
+          <IconContext.Provider
+            value={{ size: "1em", className: "ml-2", color: "#000000" }}
+          >
             <FaExternalLinkAlt />
           </IconContext.Provider>
         </a>
-        <div className="py-4 mt-auto">
+        <div className="py-8 mt-auto">
           <div className="flex justify-center content-center flex-1 items-end animate-bounce">
             <FaArrowAltCircleDown />
           </div>

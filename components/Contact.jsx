@@ -7,10 +7,9 @@ const Contact = () => {
     <section className="flex flex-col px-4">
       <h2 className="text-center text-3xl">Get in touch</h2>
       <article className="border px-4 my-4 rounded-md border-violet-500 bg-slate-50">
-        
         <aside className="flex justify-evenly">
           <IconContext.Provider
-            value={{ size: "1em", className: "ml-2" }}
+            value={{ size: "1em", className: "ml-2", color: "#000000" }}
           >
             <a
               className="flex text-[1.2em] items-center"
@@ -20,7 +19,7 @@ const Contact = () => {
               <FaLinkedin />
             </a>
             <a
-              className="flex text-[1.2em] items-center"
+              className="ml-4 flex text-[1.2em] items-center"
               href="mailto:me@petarstanev.com"
             >
               me@petarstanev.com

@@ -6,11 +6,11 @@ const Projects = () => {
   return (
     <section className="flex flex-col px-4">
       <h2 className="text-center text-3xl">Projects</h2>
-      <IconContext.Provider value={{ size: "1em", className: "ml-2" }}>
+      <IconContext.Provider
+        value={{ size: "1em", className: "ml-2", color: "#000000" }}
+      >
         <article className="border px-4 my-4 rounded-md border-violet-500 bg-slate-50">
-          <h3 className="text-xl text-center my-2">
-            Hacker news easy
-          </h3>
+          <h3 className="text-xl text-center my-2">Hacker news easy</h3>
           <p>
             Alternative way for browsing Hacker News using simple interface and
             faster interface.
