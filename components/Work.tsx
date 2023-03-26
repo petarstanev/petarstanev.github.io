@@ -1,6 +1,7 @@
+import { forwardRef } from "react";
 import Experience from "./shared/Experience";
 
-const Work = () => {
+const Work = forwardRef<HTMLDivElement>((undefined, ref) => {
   const jobs = [
     {
       id: 1,
@@ -41,13 +42,13 @@ const Work = () => {
   ];
 
   return (
-    <section>
+    <section ref={ref}>
       <h2>Work Experience</h2>
       {jobs.map((job) => (
         <Experience key={job.id} {...job} />
       ))}
     </section>
   );
-};
+});
 
 export default Work;

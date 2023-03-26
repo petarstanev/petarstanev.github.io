@@ -1,10 +1,11 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { forwardRef } from "react";
 
-const Contact = () => {
+const Contact = forwardRef<HTMLDivElement>((undefined, ref) => {
   return (
-    <section className="flex flex-col px-4">
+    <section ref={ref} className="flex flex-col px-4">
       <h2 className="text-center text-3xl">Get in touch</h2>
       <article className="border px-4 my-4 rounded-md border-violet-500 bg-slate-50">
         <aside className="flex justify-evenly">
@@ -30,6 +31,6 @@ const Contact = () => {
       </article>
     </section>
   );
-};
+});
 
 export default Contact;

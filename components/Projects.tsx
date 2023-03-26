@@ -1,10 +1,11 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { forwardRef } from "react";
 
-const Projects = () => {
+const Projects = forwardRef<HTMLDivElement>((undefined, ref) => {
   return (
-    <section>
+    <section ref={ref}>
       <h2>Projects</h2>
       <IconContext.Provider
         value={{ size: "1em", className: "ml-2", color: "#000000" }}
@@ -39,6 +40,6 @@ const Projects = () => {
       </IconContext.Provider>
     </section>
   );
-};
+});
 
 export default Projects;

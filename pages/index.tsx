@@ -8,22 +8,39 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Resume from "@/components/Resume";
 import Footer from "@/components/Footer";
-import Background from "@/components/Background";
+import { useRef, lazy, Suspense } from "react";
+const Background = lazy(() => import("@/components/Background"));
 
 export default function Home() {
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const workRef = useRef<HTMLDivElement>(null);
+  const educationRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const resumeRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
-      <Background />
+      <Suspense>
+        <Background />
+      </Suspense>
       <Header />
-      <Navigation />
+      <Navigation
+        aboutRef={aboutRef}
+        workRef={workRef}
+        eduRef={educationRef}
+        projectRef={projectsRef}
+        resumeRef={resumeRef}
+        contactRef={contactRef}
+      />
       <div className="max-w-3xl mx-auto">
         <Lead />
-        <About />
-        <Work />
-        <Education />
-        <Projects />
-        <Resume />
-        <Contact />
+        <About ref={aboutRef} />
+        <Work ref={workRef} />
+        <Education ref={educationRef} />
+        <Projects ref={projectsRef} />
+        <Resume ref={resumeRef} />
+        <Contact ref={contactRef} />
       </div>
       <Footer />
     </>

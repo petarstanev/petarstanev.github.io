@@ -1,6 +1,8 @@
-const About = () => {
+import { forwardRef } from "react";
+
+const About = forwardRef<HTMLDivElement>((undefined, ref) => {
   return (
-    <section>
+    <section ref={ref}>
       <h2>About Me</h2>
       <img
         className="w-40 my-4 self-center border rounded-full border-solid border-state-50"
@@ -16,6 +18,6 @@ const About = () => {
       </p>
     </section>
   );
-};
+});
 
 export default About;

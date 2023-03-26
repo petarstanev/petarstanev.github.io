@@ -1,6 +1,8 @@
-const Resume = () => {
+import { forwardRef } from "react";
+
+const Resume = forwardRef<HTMLDivElement>((undefined, ref) => {
   return (
-    <section>
+    <section ref={ref}>
       <h2>Resume</h2>
       <iframe
         src="https://docs.google.com/gview?url=https://petarstanev.com/Resume%20Petar%20Stanev.pdf&embedded=true"
@@ -10,6 +12,6 @@ const Resume = () => {
       />
     </section>
   );
-};
+});
 
 export default Resume;

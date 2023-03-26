@@ -1,6 +1,7 @@
+import { forwardRef } from "react";
 import Experience from "./shared/Experience";
 
-const Education = () => {
+const Education = forwardRef<HTMLDivElement>((undefined, ref) => {
   let uni = {
     id: 1,
     position: "Software Engineering with Professional Experience",
@@ -15,11 +16,11 @@ const Education = () => {
   };
 
   return (
-    <section>
+    <section ref={ref}>
       <h2>Education</h2>
       <Experience {...uni} />
     </section>
   );
-};
+});
 
 export default Education;
