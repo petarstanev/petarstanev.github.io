@@ -21,7 +21,7 @@ const Background = (props: { theme: "dark" | "light" }) => {
   return (
     <Particles
       id="tsparticles"
-      className="absolute z-[-1] TEST"
+      className="absolute z-[-1]"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
@@ -29,7 +29,6 @@ const Background = (props: { theme: "dark" | "light" }) => {
           {
             name: "light",
             default: {
-              auto: false,
               mode: "light",
               value: true,
             },
@@ -43,7 +42,6 @@ const Background = (props: { theme: "dark" | "light" }) => {
             name: "dark",
             options: {
               default: {
-                auto: false,
                 mode: "dark",
                 value: true,
               },
@@ -52,6 +50,40 @@ const Background = (props: { theme: "dark" | "light" }) => {
               },
             },
           },
+          // {
+          //   name: "light",
+          //   default: {
+          //     value: true,
+          //     mode: "light"
+          //   },
+          //   options: {
+          //     background: {
+          //       color: "#ffffff"
+          //     },
+          //     particles: {
+          //       color: {
+          //         value: ["#000000", "#0000ff"]
+          //       }
+          //     }
+          //   }
+          // },
+          // {
+          //   name: "dark",
+          //   default: {
+          //     value: true,
+          //     mode: "dark"
+          //   },
+          //   options: {
+          //     background: {
+          //       color: "#000000"
+          //     },
+          //     particles: {
+          //       color: {
+          //         value: ["#ffffff", "#ff0000"]
+          //       }
+          //     }
+          //   }
+          // },
         ],
         fullScreen: true,
         // background: {
