@@ -27,7 +27,7 @@ const Projects = forwardRef<HTMLDivElement>((undefined, ref) => {
               <FaExternalLinkAlt />
             </a>
             <a
-              className="flex text-lg items-center"
+              className="flex text-lg items-center ml-4"
               href="https://github.com/petarstanev/hacker-news"
               target="_blank"
               rel="noopener noreferrer"

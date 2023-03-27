@@ -8,8 +8,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Resume from "@/components/Resume";
 import Footer from "@/components/Footer";
-import { useRef, lazy, Suspense } from "react";
-const Background = lazy(() => import("@/components/Background"));
+import { useRef } from "react";
 
 export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -21,9 +20,6 @@ export default function Home() {
 
   return (
     <>
-      <Suspense>
-        <Background />
-      </Suspense>
       <Header />
       <Navigation
         aboutRef={aboutRef}

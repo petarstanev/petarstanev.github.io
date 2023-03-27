@@ -13,7 +13,7 @@
     @apply font-bold text-center text-3xl;
   }
   h3 {
-    @apply font-bold text-xl text-center my-2;
+    @apply font-bold text-xl text-center mb-2;
   }
   h4 {
     @apply font-bold;
@@ -31,6 +31,6 @@
   }
 
   article {
-    @apply border px-4 my-4 rounded-md border-violet-500 bg-slate-50;
+    @apply border p-4 my-4 rounded-md border-violet-500 bg-slate-50 dark:text-slate-800; 
   }
 }

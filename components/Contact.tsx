@@ -8,7 +8,7 @@ const Contact = forwardRef<HTMLDivElement>((undefined, ref) => {
     <section ref={ref} className="flex flex-col px-4">
       <h2 className="text-center text-3xl">Get in touch</h2>
       <article className="border px-4 my-4 rounded-md border-violet-500 bg-slate-50">
-        <aside className="flex justify-evenly">
+        <aside className="flex justify-evenly flex-wrap">
           <IconContext.Provider
             value={{ size: "1em", className: "ml-2", color: "#000000" }}
           >
