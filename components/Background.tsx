@@ -3,41 +3,66 @@ import Particles from "react-particles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 
-const Background = () => {
+const Background = (props: { theme: "dark" | "light" }) => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
-
     // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   }, []);
 
-  //   const particlesLoaded = useCallback(
-  //     async (container: Container | undefined) => {
-  //       await console.log(container);
-  //     },
-  //     []
-  //   );
+  const particlesLoaded = useCallback(
+    async (container: Container | undefined) => {
+      container?.loadTheme(props.theme);
+    },
+    [props.theme]
+  );
 
   return (
     <Particles
       id="tsparticles"
-      className="absolute z-[-1]"
+      className="absolute z-[-1] TEST"
       init={particlesInit}
-    //   height='100em'
-      //   loaded={particlesLoaded}
+      loaded={particlesLoaded}
       options={{
-        fullScreen: true,
-        background: {
-          color: {
-            value: "#f8fafc", //state-50
+        themes: [
+          {
+            name: "light",
+            default: {
+              auto: false,
+              mode: "light",
+              value: true,
+            },
+            options: {
+              background: {
+                color: "#f1f5f9", //state-100
+              },
+            },
           },
-        },
+          {
+            name: "dark",
+            options: {
+              default: {
+                auto: false,
+                mode: "dark",
+                value: true,
+              },
+              background: {
+                color: "#1e293b", //state-800
+              },
+            },
+          },
+        ],
+        fullScreen: true,
+        // background: {
+        //   color: {
+        //     value: "#f8fafc", //state-50
+        //   },
+        // },
         fpsLimit: 120,
         particles: {
           color: {
-            value: "#a78bfa",//violet-400
+            value: "#a78bfa", //violet-400
           },
           links: {
             color: "#8b5cf6",
