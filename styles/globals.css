@@ -10,10 +10,10 @@
     @apply font-bold;
   }
   h2 {
-    @apply font-bold text-center text-3xl;
+    @apply font-bold text-center text-3xl text-slate-800 dark:text-slate-100;
   }
   h3 {
-    @apply font-bold text-xl text-center mb-2;
+    @apply font-bold text-xl text-center mb-2 text-slate-800;
   }
   h4 {
     @apply font-bold;

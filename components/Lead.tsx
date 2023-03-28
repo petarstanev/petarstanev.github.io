@@ -14,7 +14,7 @@ const Lead = () => {
           className: "text-slate-800 dark:text-slate-100",
         }}
       >
-        <h1 className="text-6xl ">Petar Stanev</h1>
+        <h1 className="text-6xl">Petar Stanev</h1>
         <h2 className="my-3">Software Developer</h2>
         <article>
           A Software Developer with 6 years of professional experience focused

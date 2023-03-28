@@ -8,7 +8,7 @@ const Projects = forwardRef<HTMLDivElement>((undefined, ref) => {
     <section ref={ref}>
       <h2>Projects</h2>
       <IconContext.Provider
-        value={{ size: "1em", className: "ml-2", color: "#000000" }}
+        value={{ size: "1em", className: "ml-2 text-slate-800" }}
       >
         <article>
           <h3>Hacker news easy</h3>

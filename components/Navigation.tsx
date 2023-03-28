@@ -39,7 +39,7 @@ const Navigation = (props: NavigationProps) => {
       <Suspense>
         <Background theme={theme} />
       </Suspense>
-      <nav className="flex bg-slate-200 justify-between items-center dark:bg-slate-900 dark:text-slate-100">
+      <nav className="flex bg-slate-200 text-slate-800 justify-between items-center dark:bg-slate-900 dark:text-slate-100">
         <IconContext.Provider value={{ size: "1.5rem" }}>
           <button
             className="p-1 m-2 rounded bg-slate-300 dark:bg-slate-800"

@@ -10,7 +10,7 @@ const Contact = forwardRef<HTMLDivElement>((undefined, ref) => {
       <article className="border px-4 my-4 rounded-md border-violet-500 bg-slate-50">
         <aside className="flex justify-evenly flex-wrap">
           <IconContext.Provider
-            value={{ size: "1em", className: "ml-2", color: "#000000" }}
+            value={{ size: "1em", className: "ml-2 text-slate-800" }}
           >
             <a
               className="flex text-[1.2em] items-center"
