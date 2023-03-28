@@ -15,5 +15,4 @@ const Experience = (props: Experience) => {
     </article>
   );
 };
-
 export default Experience;

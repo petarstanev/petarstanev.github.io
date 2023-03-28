@@ -14,5 +14,5 @@ const Header = () => {
     </Head>
   );
 };
-
+Header.displayName = 'Header';
 export default Header;

@@ -50,5 +50,5 @@ const Work = forwardRef<HTMLDivElement>((undefined, ref) => {
     </section>
   );
 });
-
+Work.displayName = 'Work';
 export default Work;

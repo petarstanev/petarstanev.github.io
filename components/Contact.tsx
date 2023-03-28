@@ -32,5 +32,5 @@ const Contact = forwardRef<HTMLDivElement>((undefined, ref) => {
     </section>
   );
 });
-
+Contact.displayName = 'Contact';
 export default Contact;

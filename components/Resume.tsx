@@ -13,5 +13,5 @@ const Resume = forwardRef<HTMLDivElement>((undefined, ref) => {
     </section>
   );
 });
-
+Resume.displayName = 'Resume';
 export default Resume;

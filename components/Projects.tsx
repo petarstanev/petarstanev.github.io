@@ -41,5 +41,5 @@ const Projects = forwardRef<HTMLDivElement>((undefined, ref) => {
     </section>
   );
 });
-
+Projects.displayName = 'Projects';
 export default Projects;

@@ -139,4 +139,5 @@ const Background = (props: { theme: "dark" | "light" }) => {
   );
 };
 
+Background.displayName = 'Background';
 export default Background;

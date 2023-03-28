@@ -99,5 +99,5 @@ const Navigation = (props: NavigationProps) => {
     </>
   );
 };
-
+Navigation.displayName = 'Navigation';
 export default Navigation;

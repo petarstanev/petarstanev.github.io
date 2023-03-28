@@ -22,5 +22,5 @@ const Education = forwardRef<HTMLDivElement>((undefined, ref) => {
     </section>
   );
 });
-
+Education.displayName = 'Education';
 export default Education;
