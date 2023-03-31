@@ -5,7 +5,9 @@ const About = forwardRef<HTMLDivElement>((undefined, ref) => {
     <section ref={ref}>
       <h2>About Me</h2>
       <img
-        className="w-40 my-4 self-center border rounded-full border-solid border-state-50"
+        height="160"
+        width="160"
+        className="my-4 self-center border rounded-full border-solid border-state-50"
         src="/profile.webp"
         alt="Petar Stanev profile photo"
       />
