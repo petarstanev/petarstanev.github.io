@@ -18,7 +18,7 @@ const Lead = () => {
         <h2 className="my-3">Software Developer</h2>
         <article>
           A Software Developer with 6 years of professional experience focused
-          on web development currently living in Thailand. Looking for my next
+          on web development currently living in Sofia, Bulgaria. Looking for my next
           opportunity.
         </article>
         <div className="flex justify-center">
