@@ -6,6 +6,8 @@ import { FaArrowAltCircleDown } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 const Lead = () => {
+  const yearsExperience = new Date().getFullYear() - 2017; //TODO move to component, hook
+
   return (
     <main className="text-center min-h-[95vh] pt-32 pb-0 px-4 flex flex-col text-slate-800 dark:text-slate-100">
       <IconContext.Provider
@@ -17,7 +19,7 @@ const Lead = () => {
         <h1 className="text-6xl">Petar Stanev</h1>
         <h2 className="my-3">Software Developer</h2>
         <article>
-          A Software Developer with 6 years of professional experience focused
+          A Software Developer with {yearsExperience} years of professional experience focused
           on web development currently living in Sofia, Bulgaria. Looking for my next
           opportunity.
         </article>
