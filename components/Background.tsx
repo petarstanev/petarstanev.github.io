@@ -50,47 +50,8 @@ const Background = (props: { theme: "dark" | "light" }) => {
               },
             },
           },
-          // {
-          //   name: "light",
-          //   default: {
-          //     value: true,
-          //     mode: "light"
-          //   },
-          //   options: {
-          //     background: {
-          //       color: "#ffffff"
-          //     },
-          //     particles: {
-          //       color: {
-          //         value: ["#000000", "#0000ff"]
-          //       }
-          //     }
-          //   }
-          // },
-          // {
-          //   name: "dark",
-          //   default: {
-          //     value: true,
-          //     mode: "dark"
-          //   },
-          //   options: {
-          //     background: {
-          //       color: "#000000"
-          //     },
-          //     particles: {
-          //       color: {
-          //         value: ["#ffffff", "#ff0000"]
-          //       }
-          //     }
-          //   }
-          // },
         ],
         fullScreen: true,
-        // background: {
-        //   color: {
-        //     value: "#f8fafc", //state-50
-        //   },
-        // },
         fpsLimit: 120,
         particles: {
           color: {
