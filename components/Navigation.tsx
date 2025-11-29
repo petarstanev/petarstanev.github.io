@@ -5,12 +5,12 @@ const Background = lazy(() => import("@/components/Background"));
 import { lazy, Suspense } from "react";
 
 interface NavigationProps {
-  aboutRef: RefObject<HTMLDivElement>;
-  workRef: RefObject<HTMLDivElement>;
-  eduRef: RefObject<HTMLDivElement>;
-  projectRef: RefObject<HTMLDivElement>;
-  resumeRef: RefObject<HTMLDivElement>;
-  contactRef: RefObject<HTMLDivElement>;
+  aboutRef: RefObject<HTMLDivElement | null>,
+  workRef: RefObject<HTMLDivElement | null>,
+  eduRef: RefObject<HTMLDivElement | null>,
+  projectRef: RefObject<HTMLDivElement | null>,
+  resumeRef: RefObject<HTMLDivElement | null>,
+  contactRef: RefObject<HTMLDivElement | null>,
 }
 
 const Navigation = (props: NavigationProps) => {

@@ -1,6 +1,6 @@
-import Experience from "../models/Experience";
+import ExperienceModel from "../models/Experience";
 
-const Experience = (props: Experience) => {
+const Experience = (props: ExperienceModel) => {
   return (
     <article>
       <h3>
