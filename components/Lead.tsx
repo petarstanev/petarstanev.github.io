@@ -70,5 +70,4 @@ const Lead = () => {
     </main>
   );
 };
-Lead.displayName = 'Lead';
 export default Lead;
